@@ -22,7 +22,7 @@ app.include_router(api_router, prefix="/api")
 async def startup_event():
     # Initialize the vector store if it doesn't exist
     print("Starting up MLSC Knowledge Assistant...")
-    if not os.getenv("GOOGLE_API_KEY") or os.getenv("GOOGLE_API_KEY") == "your-google-api-key-here":
+    if not settings.GOOGLE_API_KEY or settings.GOOGLE_API_KEY == "your-google-api-key-here":
         print("WARNING: GOOGLE_API_KEY is not set correctly. The assistant will fail to generate answers.")
         
     try:
