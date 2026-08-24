@@ -53,8 +53,7 @@ def generate_answer(query: str, context_docs: List[Document], has_confident_resu
     user_prompt = f"{context_str}\n\nUSER QUESTION: {query}"
 
     llm = ChatGoogleGenerativeAI(
-        model="gemini-1.5-flash",
-        temperature=0,
+        model="gemini-3.6-flash",
         google_api_key=settings.GOOGLE_API_KEY
     )
 
@@ -65,7 +64,10 @@ def generate_answer(query: str, context_docs: List[Document], has_confident_resu
         ]
         
         response = llm.invoke(messages)
-        content = response.content.strip()
+        content = response.content
+        if isinstance(content, list):
+            content = "".join([c.get("text", "") if isinstance(c, dict) else str(c) for c in content])
+        content = str(content).strip()
         
         # Clean up JSON formatting if LLM wrapped it in markdown
         if content.startswith("```json"):
