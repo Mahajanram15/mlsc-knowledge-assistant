@@ -1,0 +1,37 @@
+[
+  {
+    "question": "What technical domains exist in MLSC?",
+    "reference_answer": "MLSC has five major technical domains: Artificial Intelligence and Machine Learning (AIML), App Development, Web Development, Cloud Computing, and UI/UX Design.",
+    "expected_sources": ["domains.txt"]
+  },
+  {
+    "question": "How are MLSC technical domains connected to the leadership structure?",
+    "reference_answer": "Each technical domain in MLSC is managed by a Domain Lead. The Domain Leads report to the Technical Lead, who oversees all technical operations.",
+    "expected_sources": ["domains.txt", "leadership.txt"]
+  },
+  {
+    "question": "What skills should a good domain lead have and what responsibilities do they have?",
+    "reference_answer": "A good Domain Lead should have strong technical skills, communication abilities, and leadership qualities. They are responsible for organizing domain-specific events, managing projects, guiding members, and reporting to the Technical Lead.",
+    "expected_sources": ["leadership.txt"]
+  },
+  {
+    "question": "Does becoming an MLSC member automatically make someone a coordinator?",
+    "reference_answer": "No. All coordinators are members, but not all members are coordinators. Coordinators are selected through an interview process and have organizational responsibilities.",
+    "expected_sources": ["membership.txt"]
+  },
+  {
+    "question": "How are participants generally evaluated during MLSC hackathons?",
+    "reference_answer": "Participants in MLSC hackathons are generally evaluated based on innovation, technical complexity, impact, and presentation. The exact criteria may vary per event.",
+    "expected_sources": ["hackathons.txt"]
+  },
+  {
+    "question": "What behavior is not acceptable in MLSC?",
+    "reference_answer": "Unacceptable behavior includes harassment, discrimination, plagiarism, and any violation of the university's general code of conduct.",
+    "expected_sources": ["code_of_conduct.txt"]
+  },
+  {
+    "question": "What is the salary of an MLSC domain lead?",
+    "reference_answer": "I couldn't find information about that in the provided MLSC knowledge base, so I don't want to guess.",
+    "expected_sources": []
+  }
+]
