@@ -83,7 +83,7 @@ def run_evaluation(dataset_path: str = "dataset.json"):
     try:
         from langchain_google_genai import ChatGoogleGenerativeAI, GoogleGenerativeAIEmbeddings
         # Override ragas llm/embeddings if possible
-        gemini_llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash")
+        gemini_llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash")
         gemini_embeddings = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
         
         # For simplicity, we just run evaluate and catch errors if they happen.

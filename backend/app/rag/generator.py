@@ -53,7 +53,7 @@ def generate_answer(query: str, context_docs: List[Document], has_confident_resu
     user_prompt = f"{context_str}\n\nUSER QUESTION: {query}"
 
     llm = ChatGoogleGenerativeAI(
-        model="gemini-2.5-flash",
+        model="gemini-1.5-flash",
         temperature=0,
         google_api_key=settings.GOOGLE_API_KEY
     )
